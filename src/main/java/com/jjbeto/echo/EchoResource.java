@@ -15,7 +15,7 @@ public class EchoResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public Response echo(@QueryParam("wait") int wait) {
+    public Response echo(@QueryParam("wait") long wait) {
         try {
             MILLISECONDS.sleep(wait);
             return Response.ok("Nothing to say =(").build();
@@ -27,7 +27,7 @@ public class EchoResource {
     @GET
     @Path("/{text}")
     @Produces(MediaType.TEXT_PLAIN)
-    public Response echo(@PathParam("text") String text, @QueryParam("wait") int wait) {
+    public Response echo(@PathParam("text") String text, @QueryParam("wait") long wait) {
         try {
             MILLISECONDS.sleep(wait);
             return Response.ok(text).build();

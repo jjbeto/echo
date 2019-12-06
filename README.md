@@ -24,3 +24,5 @@ mvn io.quarkus:quarkus-maven-plugin:1.0.1.Final:create \
     - Change to use root as base endpoint;
     - Returns the message path parameter back to the caller;
     - Add waiting time to respond as a query parameter;
+
+4. Add API documentation using swagger (available at `/swagger` and `/swagger-ui` endpoints)
