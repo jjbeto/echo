@@ -1,3 +1,4 @@
+[![](https://github.com/jjbeto/echo/workflows/Publish/badge.svg)](https://github.com/jjbeto/echo/workflows/Publish/badge.svg)
 [![GitHub issues](https://img.shields.io/github/issues-raw/jjbeto/echo?style=flat)](https://github.com/jjbeto/echo/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/jjbeto/echo)](https://github.com/jjbeto/echo/pulls)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
