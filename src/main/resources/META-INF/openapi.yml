@@ -1,0 +1,45 @@
+---
+openapi: 3.0.1
+info:
+  title: Echo API
+  description: This app automatically reply a PLAINTEXT with the requested text from URL for test purposes.
+  license:
+    name: "Apache 2.0"
+    url: "https://www.apache.org/licenses/LICENSE-2.0.html"
+  version: "1.0"
+paths:
+  /:
+    get:
+      description: No text informed, an automatic response "Nothing to say =(" will be returned
+      parameters:
+        - name: wait
+          description: Time in millis for API to respond
+          in: query
+          schema:
+            format: int64
+            type: integer
+      responses:
+        200:
+          description: OK
+        500:
+          description: Internal server error
+  /{text}:
+    get:
+      parameters:
+        - name: text
+          description: Text to respond
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: wait
+          description: Time in millis for API to respond
+          in: query
+          schema:
+            format: int64
+            type: integer
+      responses:
+        200:
+          description: OK
+        500:
+          description: Internal server error
